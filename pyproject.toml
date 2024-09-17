@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "bio_ml_models"
+version = "0.1.0"
+description = "Collection of prediction models for biological tasks"
+authors = ["Sebastian Franz <sebastian.franz@tum.de>", "Joaquin Gomez Sanchez <joaquin.gomez@tum.de>"]
+license = "MIT License"
+readme = "README.md"
+
+[tool.poetry.urls]
+issues = "https://github.com/biocentral/bio_ml_models/issues"
+repository = "https://github.com/biocentral/bio_ml_models"
+
+[tool.poetry.dependencies]
+python = ">=3.9,<3.12"
+
+appdirs = "^1.4.4"
+biotrainer = { git = "https://github.com/sacdallago/biotrainer.git", branch = "main"}
+
+[tool.poetry.dev-dependencies]
+pytest = "8.3.3"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
